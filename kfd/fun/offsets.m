@@ -180,7 +180,8 @@ void _offsets_init(void) {
         
         //https://github.com/apple-oss-distributions/xnu/blob/xnu-8019.41.5/osfmk/kern/task.h#L157
         off_task_t_flags = 0x3e8;	//Maybe the same, I can't find it, can wh1te4ever support to find it?
-        off_task_itk_space = 0x330;	//Maybe the same, I can't find it, can wh1te4ever support to find it?
+        //https://github.com/opa334/kfd/commit/a606f7ffb9bdfc395cb244ee363efa6111b0919b
+        off_task_itk_space = 0x308;	//Maybe the same, I can't find it, can wh1te4ever support to find it?
         off_task_map = 0x28;    //_get_task_pmap, this one still the same
 
         //https://github.com/apple-oss-distributions/xnu/blob/xnu-8019.41.5/osfmk/vm/vm_map.h#L471
@@ -208,7 +209,7 @@ void _offsets_init(void) {
         
         //https://github.com/apple-oss-distributions/xnu/blob/xnu-8019.41.5/osfmk/ipc/ipc_port.h#L152
         //https://github.com/0x7ff/dimentio/blob/7ffffffb4ebfcdbc46ab5e8f1becc0599a05711d/libdimentio.c#L958
-        off_ipc_port_ip_kobject = 0x58;	//same
+        off_ipc_port_ip_kobject = 0x48;	//same
         
         //https://github.com/apple-oss-distributions/xnu/blob/xnu-8019.41.5/osfmk/ipc/ipc_space.h#L128
         off_ipc_space_is_table = 0x20;	//always 0x20
